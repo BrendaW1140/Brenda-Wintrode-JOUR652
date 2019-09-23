@@ -1,12 +1,12 @@
 
-/*  */
+/*styles for my resume*/
 h1, h2, h3, h4, h5, p, li {
     font-family: "Open Sans", arial, sans-serif;
     color: #444;
     font-size: 16px;
   }
 
-
+/*my name*/
 h1 {
   color: #33485e;
   font-size: 48px;
@@ -14,13 +14,13 @@ h1 {
   text-align: center;
   font-weight: 700;
   }
-
+/*title underneath name*/
 strong {
   color: #33485e;
   font-size: 24px;
   text-transform: uppercase;
 }
-
+/*section*/
 h2 {
   font-size: 24px;
   text-transform: uppercase;
@@ -28,19 +28,23 @@ h2 {
   color: white;
   font-weight: 400;
 }
+/*job title*/
 h3 {
   font-size: 24px;
   font-weight: 700;
 }
+/*organization name*/
 h4 {
   font-size: 24px;
   font-weight: 400;
 }
+/*dates*/
 h5 {
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
 }
+/*lists for contact, skills, education*/
 li {
   font-size: 16px;
 }
