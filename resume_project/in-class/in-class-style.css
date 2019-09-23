@@ -1,3 +1,18 @@
 h1, h2, h3, h4, h5, p, li {
-  font-family: Open Sans, arial, sans-serif;
+    font-family: Open Sans, arial, sans-serif;
+    font-color: #444;
+    font-size: 16px;
+    }
+h1 {
+  font-color: blue;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
   }
+
+title {
+  font-color: blue;
+  font-size: 24px;
+  text-transform: uppercase;
+}
