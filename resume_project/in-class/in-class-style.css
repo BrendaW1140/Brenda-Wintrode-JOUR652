@@ -7,12 +7,14 @@ h1, h2, h3, h4, h5, p, li {
   }
 
 /*my name*/
-h1 {
+#name {
   color: #33485e;
   font-size: 48px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
+  border-bottom: solid 1px #33485e;
+  margin: 0 auto;
   }
 /*title underneath name*/
 strong {
