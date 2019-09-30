@@ -5,7 +5,12 @@
     color: #444;
     font-size: 16px;
   }
-
+#container{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
 /*my name*/
 #name {
   color: #33485e;
@@ -75,7 +80,7 @@
 }
 
 /*lists for contact, skills, education*/
-ul.menu {
+menu {
   margin: 0px 0 auto;
   padding: 0px;
 }
