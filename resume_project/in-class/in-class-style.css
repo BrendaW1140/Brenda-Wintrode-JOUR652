@@ -38,9 +38,10 @@ strong {
   font-weight: 700;
 }
 /*organization name*/
-h4 {
-  font-size: 24px;
+.organization {
+  font-size: 20px;
   font-weight: 400;
+  margin-top: 2px;
 }
 /*dates*/
 h5 {
