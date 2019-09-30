@@ -23,15 +23,17 @@ strong {
   text-transform: uppercase;
 }
 /*section*/
-h2 {
+.section-header {
   font-size: 24px;
   text-transform: uppercase;
   background-color: #33485e;
   color: white;
   font-weight: 400;
+  margin: 20px 0px 10px 0px;
+  max-width: 400px;
 }
 /*job title*/
-h3 {
+.job-title {
   font-size: 24px;
   font-weight: 700;
 }
