@@ -1,6 +1,6 @@
 
 /*styles for my resume*/
-#name, .section-header, .job-title, .organization, .date, p, .description, .menu, li {
+#name, #title, .section-header, .job-title, .organization, .date, p, .description, .menu, li {
     font-family: "Open Sans", arial, sans-serif;
     color: #444;
     font-size: 16px;
@@ -17,11 +17,27 @@
   margin: 0 auto;
   }
 /*title underneath name*/
-strong {
+#title {
   color: #33485e;
   font-size: 24px;
+  font-weight: 700;
+  width: 60%;
+  min-width: 300px;
+  margin-top: 20;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
   text-transform: uppercase;
 }
+/*mision statement*/
+.mission-statement {
+  width: 60%;
+  min-width: 300px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+
 /*section*/
 .section-header {
   font-size: 24px;
@@ -66,7 +82,9 @@ ul.menu {
 .menu li {
   display: inline;
 }
-
+#education {
+  margin-top: 40px 0px 0px 0px;
+}
 li {
   font-size: 16px;
 }
