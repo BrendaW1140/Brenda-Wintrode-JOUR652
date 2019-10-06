@@ -33,6 +33,7 @@
   margin-right: auto;
   margin-left: auto;
   text-transform: uppercase;
+  text-align: center;
 }
 /*mision statement*/
 .mission-statement {
@@ -40,6 +41,7 @@
   min-width: 300px;
   margin: auto;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 
@@ -80,9 +82,10 @@
 }
 
 /*lists for contact, skills, education*/
-menu {
+.menu {
   margin: 0px 0 auto;
   padding: 0px;
+  text-align: center;
 }
 .menu li {
   display: inline;
