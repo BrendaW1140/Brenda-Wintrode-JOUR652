@@ -1,0 +1,107 @@
+
+/*styles for my resume*/
+#name, #title, .section-header, .job-title, .organization, .date, p, .description, .menu, li {
+    font-family: "Open Sans", arial, sans-serif;
+    color: #444;
+    font-size: 16px;
+}
+#container{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+/*my name*/
+#name {
+  color: #33485e;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: solid 1px #33485e;
+  margin: 0 auto;
+}
+/*title underneath name*/
+#title {
+  color: #33485e;
+  font-size: 24px;
+  font-weight: 700;
+  width: 60%;
+  min-width: 300px;
+  margin-top: 20;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+.mission-statement-wrap{
+  width: 100%;
+  text-align: center;
+}
+/*mision statement*/
+.mission-statement {
+  width: 60%;
+  min-width: 300px;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  display: inline-block;
+}
+/*section*/
+.section-header {
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: #33485e;
+  color: white;
+  font-weight: 400;
+  margin: 20px 0px 10px 0px;
+  max-width: 400px;
+}
+/*job title*/
+.job-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+/*organization name*/
+.organization {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+/*dates*/
+.date {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 2px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+/*description*/
+.description {
+  margin: 10px 0px 20px 0px;
+}
+
+/*lists for contact, skills, education*/
+.menu {
+  margin: 0px 0 auto;
+  padding: 0px;
+  text-align: center;
+  word-spacing: normal;
+}
+.menu li {
+  display: inline;
+  padding-left: 4px;
+}
+#education {
+  margin-top: 40px 0px 0px 0px;
+}
+#skills {
+  margin-top: 40px 0px 0px 0px;
+}
+li {
+  font-size: 16px;
+}
