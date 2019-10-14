@@ -1,0 +1,30 @@
+#content{
+  margin: 0 auto;
+  max-width: 900px;
+}
+#headline{
+  font-family: Helvetica, sans-serif;
+  font-size: 32px;
+}
+#byline{
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+p{
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+.caption{
+  font-family: Helvetica, serif;
+  font-size: 12;
+  font-style: italic;
+}
+#list{
+  font-size: 16px;
+  font-family: Helvetica;
+}
+#quote{
+  font-size: 24px;
+  font-family: Georgia, serif;
+}
