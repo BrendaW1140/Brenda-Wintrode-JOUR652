@@ -42,11 +42,29 @@ body, html {
 
 .anchors {
   padding-top: 20px;
+  padding-bottom: 30px;
   font-family: Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .nav-link {
   color: #05494b;
+}
+
+.banner-small {
+display: none;
+}
+
+.banner-large {
+display: block;
+}
+
+@media (max-width: 970px) {
+.banner-small {
+display: block;
+}
+.banner-large {
+display: none;
+}
 }
