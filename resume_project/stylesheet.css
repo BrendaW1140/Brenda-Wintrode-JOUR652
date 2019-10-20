@@ -1,5 +1,5 @@
 body, html {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .container {
@@ -7,8 +7,6 @@ body, html {
 }
 
 .row {
-    width: 100%;
-    padding: 0;
   }
   .col-md-4 {
     background-color: #77aeb1;
@@ -17,10 +15,12 @@ body, html {
   }
   .col-md-8 {
     background-color: #77aeb1;
-    color: #336666;
+    color: #05494b;
     height: 100vh;
     overflow: hidden;
     overflow-y: scroll;
+    border-right:
+    margin: auto;
   }
 
 .m-0 {
@@ -45,5 +45,8 @@ body, html {
   font-family: Helvetica, sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #CCCCCC;
+}
+
+.nav-link {
+  color: #05494b;
 }
