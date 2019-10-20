@@ -19,7 +19,6 @@ body, html {
     height: 100vh;
     overflow: hidden;
     overflow-y: scroll;
-    border-right:
     margin: auto;
   }
 
@@ -44,8 +43,9 @@ body, html {
   padding-top: 20px;
   padding-bottom: 30px;
   font-family: Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 22px;
+  text-transform: lowercase;
 }
 
 .nav-link {
@@ -60,11 +60,44 @@ display: none;
 display: block;
 }
 
+.subhead {
+  font-style: Helvetica, sans-serif;
+  font-size: 30px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+.job-title {
+  font-style: Helvetica, sans-serif;
+  font-size: 22px;
+  padding-bottom: 5px;
+  font-weight: normal;
+  text-transform: lowercase;
+  font-weight: lighter;
+
+}
+.date {
+  float: right;
+  padding-right: 20px;
+}
+
+.organization {
+  font-weight:lighter;
+  padding-bottom; 15px;
+  text-transform: full-width;
+}
+.description {
+  width: 75%;
+  font-weight: lighter;
+  padding-right: 50px;
+}
+
+
 @media (max-width: 970px) {
 .banner-small {
 display: block;
 }
 .banner-large {
 display: none;
-}
 }
