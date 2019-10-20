@@ -1,20 +1,35 @@
-.col-md-4 {
-  background-color: grey;
-}
 .container {
   width: 100%;
   padding: 0;
-
-
 }
+.row {
+    width: 100%;
+    padding: 0;
+  }
+  .col-md-4 {
+    background-color: grey;
+    padding-top: 20px;
+  }
+  .col-md-8 {
+    background-color: lightblue;
+  }
+
 .jumbotron {
   padding: 0;
+  margin-bottom: 0px;
 }
 
 .fab {
   size: 7x;
 }
 
+.contactme {
+  align-content: center;
+}
+
 .anchors {
-  font-color: ;
+  padding-top: 20px;
+  font-family: Helvetica, sans-serif;
+  font-weight:400;
+  font-size: 24px;
 }
