@@ -43,9 +43,9 @@ body, html {
   padding-top: 20px;
   padding-bottom: 30px;
   font-family: Helvetica, sans-serif;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 22px;
-  text-transform: lowercase;
+
 }
 
 .nav-link {
@@ -62,30 +62,30 @@ display: block;
 
 .subhead {
   font-style: Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   padding-top: 5px;
   padding-bottom: 15px;
   font-weight: normal;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 .job-title {
   font-style: Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   padding-bottom: 5px;
   font-weight: normal;
-  text-transform: lowercase;
-  font-weight: lighter;
 
 }
 .date {
   float: right;
   padding-right: 20px;
+  font-weight:lighter;
 }
 
 .organization {
   font-weight:lighter;
   padding-bottom; 15px;
-  text-transform: full-width;
+  text-transform: uppercase;
+
 }
 .description {
   width: 75%;
