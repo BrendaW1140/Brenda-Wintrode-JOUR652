@@ -1,0 +1,115 @@
+body, html {
+  /*overflow: hidden;*/
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+.nav-link:hover {
+  color: #CCCCCC;
+}
+
+.container {
+  width: 100%;
+}
+
+.col-md-4 {
+    background-color: #77aeb1;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.col-md-8 {
+    background-color: #77aeb1;
+    color: #05494b;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.m-0 {
+  border-color: inherit;
+}
+
+.jumbotron {
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.fab {
+  size: 7x;
+}
+
+.contactme {
+  align-content: center;
+}
+
+.anchors {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-weight: lighter;
+  font-size: 22px;
+
+}
+
+.nav-link {
+  color: #05494b;
+}
+
+.banner-small {
+display: none;
+}
+
+.banner-large {
+display: block;
+}
+
+.subhead {
+  font-size: 24px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.job-title {
+  font-size: 20px;
+  padding-bottom: 5px;
+  font-weight: normal;
+
+}
+.date {
+  float: right;
+  padding-right: 20px;
+  font-weight:lighter;
+}
+
+.organization {
+  font-weight:lighter;
+  padding-bottom; 15px;
+  text-transform: uppercase;
+
+}
+.description {
+  width: 75%;
+  font-weight: lighter;
+  padding-right: 50px;
+}
+
+@media (max-width: 970px) {
+.banner-small {
+display: block;
+}
+.banner-large {
+display: none;
+}
+
+@media (max-width: 750px) {
+.banner-small {
+display: block;
+}
+.banner-large {
+display: none;
+}
