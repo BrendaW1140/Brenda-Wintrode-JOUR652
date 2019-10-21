@@ -11,6 +11,10 @@
   width: 75%;
   margin: 0 auto;
 }
+
+.banner{
+  width: auto;
+}
 .mainhead{
   font-family: Georgia: sans-serif;
   font-size: 36px;
@@ -18,7 +22,7 @@
 }
 
 .quote {
-  font-family: cursive;
+  font-style:italic;
   font-size: 24px;
   color: teal;
 }
