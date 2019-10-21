@@ -17,12 +17,20 @@
 
 }
 
+.quote {
+  font-family: cursive;
+  font-size: 24px;
+  color: teal;
+}
 .subhead {
   font-family: Georgia: sans-serif;
   font-size: 24px;
 
 }
 
+.caption{
+  text-align: left;
+}
 .text {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 18px;
