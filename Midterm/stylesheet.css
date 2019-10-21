@@ -3,3 +3,25 @@
   font-weight:bold;
   font-size: 16px;
 }
+
+.mainhead{
+  font-family: Georgia: sans-serif;
+  font-size: 36px;
+
+}
+
+.subhead {
+  font-family: Georgia: sans-serif;
+  font-size: 24px;
+
+}
+
+.text {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+}
+
+.burnername {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 16px;
+}
