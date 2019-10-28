@@ -1,13 +1,26 @@
 .caption {
 font-style: italic;
-font-size: 12px
-margin-top: 30px;
+font-size: 12px;
+margin-top: 15px;
+margin-bottom: 50px;
 
 }
 .h3 {
   font-family: Helvetica, sans-serif;
 }
+.text {
+  margin-top: 40px;
+}
 
 .page-footer {
   background-color: lightgrey;
 }
+
+.hero-image {
+  padding-top: 50px;
+}
+.hero-caption {
+font-style: italic;
+font-size: 12px;
+margin-top: 20px;
+margin-bottom: 30px;
