@@ -118,18 +118,18 @@
   <!--start line chart-->
   <!-- first graphic container-->
   <div class="graphic-container">
-    <h2>Dollars Spent by District</h2>
+    <h2>Dollars spent by district</h2>
      <div id="totalbydistrict"></div>
      <em>Source: Maryland Campaign Information System</em>
   </div>
   <div class="graphic-container">
-    <h2>No. of candidates that spent it on marketing</h2>
+    <h2>How many candidates spent on marketing?</h2>
     <div id="mktbudget"></div>
     <em>Source: Maryland Campaign Information System</em>
   </div>
    <div class="graphic-container">
-     <h2>Examining the carnage.</h2>
-     <div id="killedByYear"></div>
+     <h2>Total spent by candidate</h2>
+     <div id="totalspent"></div>
      <em>Source: Maryland Campaign Information System</em>
    </div>
 
@@ -139,7 +139,7 @@
      <script type="text/javascript">
      //CHART 1
 
-     <!--PIE-->
+     <!--START PIE-->
      var chart = c3.generate({
        bindto: '#totalbydistrict',
     data: {
@@ -149,13 +149,13 @@
           ['31', 548,197.62],
           ['32', 584,050],
           ['33', 428,661.01],
-          ['21', 525,844.94]
+          ['21', 525,844.94],
         ],
     type : 'pie',
         onclick: function (d, i) { console.log("onclick", d, i); },
         onmouseover: function (d, i) { console.log("onmouseover", d, i); },
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
-      },
+      }
     pie: {
         label: {
             format: function (ratio, value, id) {
@@ -164,10 +164,9 @@
           }
         }
       });
-     <!--PIE-->
+     <!--END PIE-->
 
-
-
+     <!--MKT BUDGET-->
      var chart2 = c3.generate({
       bindto: '#mktbudget',
       data: {
@@ -176,37 +175,31 @@
             ['Democrat', 3, 2, 8, 7],
             ['Republican', 5, 2, 7, 6],
         ],
-        
-
-        type: 'bar'
-      },
+        type : 'bar'
+      }
 
       color: {
         pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
       }
     });
+    <!--END MKT BUDGET-->
 
+
+    <!--TOTAL SPENT-->
     var chart3 = c3.generate({
-      bindto: '#killedByYear',
-      data: {
-        xs: {
-          'Killed': 'x1',
-          'Injured': 'x2',
-          'Incidents': 'x3',
-        },
+      bindto: '#totalspent',
+    data: {
         columns: [
-          ['x1', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
-         ['Killed', 14, 4, 5, 1, 5, 3, 9, 9, 1, 5, 1, 3, 2, 32, 3, 6, 0, 2, 5, 21],
-          ['x2', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
-           ['Injured', 35, 3, 22, 7, 7, 9, 17, 16, 17, 5, 4, 6, 9, 8, 13, 14, 2, 18, 15, 44],
-          ['x3', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
-           ['Incidents', 7, 12, 13, 5, 11, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12],
-        ],
-      },
-      color: {
-        pattern: ['#ff0000', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+            ['$', 100, 99, 80,75, 24, 12],
+          ],
+        type: 'bar'
       }
-    });
+    }
+    axis: {
+        rotated: true
+    }
+});
+    <!--END TOTAL SPENT-->
   </script>
 <!--end line chart-->
 
