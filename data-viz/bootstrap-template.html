@@ -118,19 +118,19 @@
   <!--start line chart-->
   <!-- first graphic container-->
   <div="graphic-container">
-    <h2>What race are school shooters likely to be?</h2>
-     <div id="shooterRace"></div>
-     <em>Source: Data collected by The Washington Post</em>
+    <h2>Dollars Spent by District</h2>
+     <div id="totalbydistrict"></div>
+     <em>Source: Data source: Maryland Campaign Information System</em>
   </div>
   <div="graphic-container">
-    <h2>Where do school shootings occur?</h2>
-    <div id="where"></div>
-    <em>Source: Data collected by The Washington Post</em>
+    <h2>How much of the budget went to marketing?</h2>
+    <div id="mktbudget"></div>
+    <em>Source: Data source: Maryland Campaign Information System</em>
   </div>
    <div class="graphic-container">
      <h2>Examining the carnage.</h2>
      <div id="killedByYear"></div>
-     <em>Source: Data collected by The Washington Post</em>
+     <em>Source: Data source: Maryland Campaign Information System</em>
    </div>
 
  <!-- END first graphic container-->
@@ -140,15 +140,15 @@
      //CHART 1
 
      var chart = c3.generate({
-       bindto: '#shooterRace',
+       bindto: '#totalbydistrict',
        data: {
          // iris data from R
          columns: [
-           ['Asian', 1],
-           ['American Indian', 3],
-           ['Black', 35],
-           ['Hispanic', 6],
-           ['White', 60],
+           ['30', 2,390,686.44],
+           ['31', 548,197.62],
+           ['32', 584,050],
+           ['33', 428,661.01],
+           ['21', 525,844.94],
          ],
          type : 'pie',
          onclick: function (d, i) { console.log("onclick", d, i); },
@@ -161,13 +161,19 @@
      });
 
      var chart2 = c3.generate({
-      bindto: '#where',
+      bindto: '#mktbudget',
       data: {
         columns: [
-          ['City', 101],
-          ['Suburb', 58],
-          ['Town', 24],
-          ['Rural', 31],
+          ['0-24%', 3],
+          ['25-49%', 2],
+          ['50-74%', 8],
+          ['75-100%', 7],
+        ],
+        columns: [
+          ['0-24%', 5],
+          ['25-49%', 2],
+          ['50-74%', 7],
+          ['75-100%', 6],
         ],
         type: 'bar'
       },
