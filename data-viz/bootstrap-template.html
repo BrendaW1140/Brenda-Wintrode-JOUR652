@@ -145,24 +145,24 @@
     data: {
       // iris data from R
         columns: [
-          ['30', 2,390,686.44],
-          ['31', 548,197.62],
-          ['32', 584,050],
-          ['33', 428,661.01],
-          ['21', 525,844.94],
+          ['30', 2390686.44],
+          ['31', 548197.62],
+          ['32', 584050],
+          ['33', 428661.01],
+          ['21', 525844.94],
         ],
     type : 'pie',
         onclick: function (d, i) { console.log("onclick", d, i); },
         onmouseover: function (d, i) { console.log("onmouseover", d, i); },
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
-      }
-    pie: {
+      },
+      pie: {
         label: {
-            format: function (ratio, value, id) {
+            format: function (value, ratio, id) {
                 return d3.format('%')(ratio);
             }
-          }
         }
+    }
       });
      <!--END PIE-->
 
@@ -176,7 +176,7 @@
             ['Republican', 5, 2, 7, 6],
         ],
         type : 'bar'
-      }
+      },
 
       color: {
         pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
@@ -193,8 +193,7 @@
             ['$', 100, 99, 80,75, 24, 12],
           ],
         type: 'bar'
-      }
-    }
+      },
     axis: {
         rotated: true
     }
