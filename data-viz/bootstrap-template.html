@@ -123,12 +123,12 @@
      <em>Source: Maryland Campaign Information System</em>
   </div>
   <div class="graphic-container">
-    <h2>How many candidates spent on marketing?</h2>
+    <h2>How much of the budget went to marketing?</h2>
     <div id="mktbudget"></div>
     <em>Source: Maryland Campaign Information System</em>
   </div>
    <div class="graphic-container">
-     <h2>Total spent by candidate</h2>
+     <h2>Top Ten Spenders</h2>
      <div id="totalspent"></div>
      <em>Source: Maryland Campaign Information System</em>
    </div>
@@ -180,13 +180,19 @@
      var chart2 = c3.generate({
       bindto: '#mktbudget',
       data: {
+        x: 'x',
         columns: [
-            ['% of Budget', '0-24%', '25-49%', '50-74%', '75-100%'],
+            ['x', '0-24%', '25-49%', '50-74%', '75-100%'],
             ['Democrat', 3, 2, 8, 7],
             ['Republican', 5, 2, 7, 6],
         ],
         type : 'bar'
       },
+      axis: {
+        x: {
+            type: 'category',
+          }
+    },
 
       color: {
         pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
@@ -200,12 +206,22 @@
       bindto: '#totalspent',
     data: {
         columns: [
-            ['$', 100, 99, 80,75, 24, 12],
+            ['$', 1552806.10, 271720.22, 269204.35, 260140.27, 202558.91, 156430.10, 154855.41, 153159.68, 138894.49, 97468.11, 95713.59],
           ],
         type: 'bar'
       },
     axis: {
         rotated: true
+    },
+    tooltip: {
+        format: {
+            title: function (d) {console.log(d); return '$ Spent By District'; },
+            value: function (value, ratio, id) {
+                var format = "$" + d3.format(',.2f') (value);
+                return format;
+            }
+//            value: d3.format(',') // apply this format to both y and y2
+        }
     }
 });
     <!--END TOTAL SPENT-->
