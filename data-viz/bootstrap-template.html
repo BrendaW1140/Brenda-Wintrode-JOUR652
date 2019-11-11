@@ -159,8 +159,18 @@
       pie: {
         label: {
             format: function (value, ratio, id) {
-                return d3.format('%')(ratio);
+                return d3.format(',.0%')(ratio);
             }
+        }
+    },
+    tooltip: {
+        format: {
+            title: function (d) { return '$ Spent By District'; },
+            value: function (value, ratio, id) {
+                var format = "$" + d3.format(',.2f') (value);
+                return format;
+            }
+//            value: d3.format(',') // apply this format to both y and y2
         }
     }
       });
