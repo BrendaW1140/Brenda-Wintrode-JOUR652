@@ -10,6 +10,15 @@
   margin-top: 30px;
 }
 
+.blockquote {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 .byline {
   font-family: Helvetica, sans-serif;
   font-size: 15px;
