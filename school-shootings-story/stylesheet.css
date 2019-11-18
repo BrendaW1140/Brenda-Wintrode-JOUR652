@@ -59,7 +59,9 @@ h2 {
   font-size: 2em;
 
 }
-
+.navbar-brand {
+  color: white;
+}
 .byline {
   font-family: Helvetica, sans-serif;
   font-size: 15px;
