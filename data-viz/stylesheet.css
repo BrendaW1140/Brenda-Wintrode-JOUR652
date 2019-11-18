@@ -10,6 +10,14 @@
   margin-top: 30px;
 }
 
+.graphic-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.graph-title{
+  font-size: 20px;
+  text-align: center;
+}
 .blockquote {
   text-align: center;
   font-family: Helvetica, sans-serif;
