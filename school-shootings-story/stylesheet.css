@@ -6,7 +6,14 @@ body {
   text-align: center;
   width: 15px;
   margin: 15px;
-  
+}
+
+.intro {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25em;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: auto;
 }
 
 .caption {
@@ -40,7 +47,17 @@ color: #0052a5;
 
 .headline {
   text-align: center;
+  font-size: 3em;
   margin-top: 30px;
+  font-family: Montserrat;
+}
+h2 {
+  font-family: Montserrat;
+}
+.subhead {
+  text-align; center;
+  font-size: 2em;
+
 }
 
 .byline {
@@ -53,10 +70,17 @@ color: #0052a5;
 .h3 {
   font-family: Helvetica, sans-serif;
 }
+.container-fluid{
+  background-color: black;
+  padding: 25px;
+  color: white;
+  font-family: Montserrat;
+}
 
 .text {
   margin-top: 20px;
   margin-bottom: 20px;
+  width: auto;
 }
 
 .page-footer {
@@ -69,6 +93,8 @@ color: #0052a5;
 
 .hero-image {
   padding-top: 30px;
+  max-width: 900px;
+  width: 100%;
 }
 
 .hero-caption {
