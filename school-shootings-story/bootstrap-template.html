@@ -29,46 +29,24 @@
   <!-- NavBar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <img class="star" src="images/star-red.png"/>
-    <img class="star" src="images/star-blue.png"/>
-    <a class="navbar-brand">An American Tragedy</a>
-    <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent"-->>
-      <ul>
-        <li class="nav-item">
-          <a class="nav-link" href="#Where & When">Where & When<span class="sr-only">(current)</span></a>
-        </li>
-
-        <!-- Link -->
-        <li class="nav-item">
-          <a href="#The Carnage">The Carnage</a>
-        </li>
-        <!-- End Link -->
-        <li class="nav-item">
-          <a href="#A Profile">
-            A Profile
-          </a>
-        </li>
-      </ul>
-      <!--form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form-->
-    </div>
+      <img class="star" src="images/star-blue.png"/>
+        <div class="navbar-brand">An American Tragedy</div>
+          <ul>
+            <li class="nav-item">Where & When</li>
+            <li class="nav-item">The Carnage</li>
+            <li class="nav-item">A Profile</li>
+          </ul>
   </nav>
   <!-- End NavBar -->
-  <!--start hero image-->
 
+  <!--start hero image-->
+  <div class="container">
       <div class="row">
             <figure class="hero-image">
               <img class="img-fluid" src="images/ar15.jpg"/>
-                <div class="container">
-                <div class="row">
-                </div>
-                </div>
             </figure>
       </div>
+  </div>
   <!--end hero image-->
   <!--Headline-->
   <div class="container">
@@ -85,28 +63,25 @@
       <div class="row">
         <div class="col-md-8 offset-md-2">
           <h2 class="subhead">Over 200 school shootings in two decades. What have we learned?</h2>
+          <img class="star" src="images/star-red.png"/>
+          <img class="star" src="images/star-blue.png"/>
+          <img class="star" src="images/star-red.png"/>
+          <img class="star" src="images/star-blue.png"/>
+          </div>
         </div>
       </div>
-    </div>
     <!--End byline-->
     <!--star bar-->
-    <div class="star-container">
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-        <img class="star" src="images/star-red.png"/>
-        <img class="star" src="images/star-blue.png"/>
-        <img class="star" src="images/star-red.png"/>
-        <img class="star" src="images/star-blue.png"/>
-        </div>
-      </div>
-    </div>
+
+
     <!--end star bar-->
 
     <!--text container-->
         <div class="container">
           <div class="row">
             <div class="col-md-8 offset-md-2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p class="intro-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
             </div>
           </div>
       </div>
@@ -139,11 +114,11 @@
           <div class="col-md-8 offset-md-2">
             <figure>
             <img class="stack-image" src="images/alaina-petty.jpg" alt="Alaina Perry"/>
+            <figcaption class="caption">
+            Caption:  Insert image or video above
+            </figcaption>
           </figure>
           </div>
-          <figcaption class="hero-caption col-md-8 offset-md-2">
-            Alaina Perry (Photographer)
-          </figcaption>
       </div>
     </div>
     <div class="container">
@@ -155,7 +130,21 @@
 </div>
 </div>
 </div>
+<!-- first graphic container-->
 
+<div class="graphic-container">
+ <div class="row">
+     <div class="col-md-8 offset-md-2">
+       <h4>Shootings by year</h4>
+       <p>The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.
+       </p>
+       <div id="shootingsByYearChart"></div>
+       <em>Source: Data collected by The Washington Post</em>
+     </div>
+   </div>
+</div>
+
+<!-- END first graphic container-->
 
     <div class="container">
       <div class="row">
@@ -170,21 +159,7 @@
 
   <!--End text container-->
 
-  <!-- first graphic container-->
 
- <div class="container">
-   <div class="row">
-       <div class="col-md-8 offset-md-2">
-         <h2>Shootings by year</h2>
-         <p>The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.
-         </p>
-         <div id="myLineChart"></div>
-         <em>Source: Data collected by The Washington Post</em>
-       </div>
-     </div>
- </div>
-
- <!-- END first graphic container-->
 <!--div="graphic-container">
  <div id="shootingsByTypeChart"></div>
 </div>
@@ -195,7 +170,7 @@
      <script type="text/javascript">
      //CHART 1
      var chart = c3.generate({
-       bindto: '#myLineChart',
+       bindto: '#shootingsByYearChart',
        data: {
          x: 'x',
          columns: [
