@@ -197,8 +197,8 @@
               <div class="graphic-container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
-                <h2>Top Ten Spenders</h2>
-                <div id="totalspent"></div>
+                <h2 class="graph-title">Top Ten Spenders</h2>
+                <div id="topspenders"></div>
                 <em>Source: Maryland Campaign Information System</em>
               </div>
             </div>
@@ -495,21 +495,27 @@
     <!--END MKT BUDGET-->
 
 
-    <!--TOTAL SPENT-->
+    <!--TOP SPENDERS-->
     var chart3 = c3.generate({
-      bindto: '#totalspent',
+      bindto: '#topspenders',
     data: {
+      x: 'x',
         columns: [
             ['Total Campaign Spending', 1552806.10, 271720.22, 269204.35, 260140.27, 202558.91, 156430.10, 154855.41, 153159.68, 138894.49, 97468.11, 95713.59],
+            ['x', 'Busch', 'Elfreth', 'George', 'Kipke', 'Rosapepe', 'Beidle', 'Reilly', 'Barnes', 'Cain', 'Carey', 'Saab'],
           ],
         type: 'bar'
       },
     axis: {
-        rotated: true
+        rotated: true,
+        x: {
+            type: 'category',
+          }
     },
+
     tooltip: {
         format: {
-            title: function (d) {console.log(d); return 'Candidate Name'; },
+            title: function (d) {console.log(d); return 'Total Campaign Spending'; },
             value: function (value, ratio, id) {
                 var format = "$" + d3.format(',.2f') (value);
                 return format;
@@ -521,7 +527,7 @@
         pattern: ['#b38e6e', '#373636', '#666666', '#8f5c4f','#584136', '#adb2c6']
       }
 });
-    <!--END TOTAL SPENT-->
+    <!--END TOP SPENDERS-->
 <!--START MARKETING CATEGORIES-->
 var chart2 = c3.generate({
  bindto: '#marketingcat',
