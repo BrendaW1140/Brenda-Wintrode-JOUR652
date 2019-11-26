@@ -134,8 +134,8 @@ color: #0052a5;
   text-align: center;
   display: inline-block;
   padding-top: 30px;
-  max-width: 900px;
   width: 100%;
+  margin: 0;
 }
 .hero-caption {
   font-style: italic;

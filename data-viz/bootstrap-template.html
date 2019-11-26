@@ -124,7 +124,8 @@
             In Districts 21, 31, 32 and 33 both parties spent on average just over $500,000 on their campaigns on marketing, donating to other campaigns and fundraising expenses. District 30 Democrats and Republicans spent over $2.3 million.
             </p>
   <!--start blockquote-->
-      <blockquote class="blockquote">Democratic candidates in Districts 30, 30A and 30B spent $591,539.16 marketing their campaigns and a total of $2,049,304.63</blockquote>
+      <blockquote class="blockquote">Democratic candidates in Districts 30, 30A and 30B spent more on marketing than any other district spent in total.
+      </blockquote>
   <!--end blockquote-->
 
 
@@ -139,8 +140,8 @@
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
                         <figure>
-                          <figcaption class="caption">
-                          <img class="img-fluid" src="images/Senate.jpg" alt="Miller Senate Building">
+                          <img class="img-fluid" src="images/senate.jpg" alt="Miller Senate Building Sign">
+                          <figcaption class="caption"> Miller Senate building entrace on Bladen Street in Annapolis. (Photo credit: Brenda Wintrode)
                           </figcaption>
                         </figure>
                     </div>
@@ -157,16 +158,13 @@
               <div class="graphic-container">
                 <div class="row">
                           <div class="col-md-8 offset-md-2">
-                              <h2 class="graph-title">Who donated money to the caucus committees?</h2>
+                              <h2 class="graph-title">How much went to a caucus?</h2>
                             </div>
                           </div>
                               <div class="row">
-                              <div class="col-md-6"><div id="housedempie"></div></div>
-                              <div class="col-md-6"><div id="housereppie"></div></div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-6"><div id="senatedempie"></div></div>
-                            <div class="col-md-6"><div id="senatereppie"></div></div>
+                              <div class="col-md-4"><div id="housedempie"></div></div>
+                              <div class="col-md-4"><div id="housereppie"></div></div>
+                            <div class="col-md-4"><div id="senatedempie"></div></div>
                           </div>
                 <em>Source: Maryland Campaign Information System</em>
               </div>
@@ -291,7 +289,7 @@
           ['33', 428661.01],
           ['21', 525844.94],
         ],
-    type : 'pie',
+    type : 'bar',
         onclick: function (d, i) { console.log("onclick", d, i); },
         onmouseover: function (d, i) { console.log("onmouseover", d, i); },
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
@@ -470,32 +468,48 @@
      }
       });
      <!--Senate Rep PIE-->
-     <!--MKT BUDGET-->
-     var chart2 = c3.generate({
-      bindto: '#mktbudget',
-      data: {
-        x: 'x',
+     <!--Total By District Pie-->
+     var chart = c3.generate({
+       bindto: '#totalbydistrict',
+    data: {
+      // iris data from R
         columns: [
-            ['x', '0-24%', '25-49%', '50-74%', '75-100%'],
-            ['Democrat', 3, 2, 8, 7],
-            ['Republican', 5, 2, 7, 6],
+          ['30', 2390686.44],
+          ['31', 548197.62],
+          ['32', 584050],
+          ['33', 428661.01],
+          ['21', 525844.94],
         ],
-        type : 'bar'
+    type : 'bar',
+        onclick: function (d, i) { console.log("onclick", d, i); },
+        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
       },
-      axis: {
-        x: {
-            type: 'category',
-          }
+      pie: {
+        label: {
+            format: function (value, ratio, id) {
+                return d3.format(',.0%')(ratio);
+            }
+        }
     },
+    tooltip: {
+        format: {
+            title: function (d) { return '$ Spent By District'; },
+            value: function (value, ratio, id) {
+                var format = "$" + d3.format(',.2f') (value);
+                return format;
+            }
+//            value: d3.format(',') // apply this format to both y and y2
+        }
+    },
+    color: {
+        pattern: ['#b38e6e', '#584136', '#373636', '#666666', '#adb2c6', '#8f5c4f']
+    }
+      });
+    <!--END Total By District Pie-->
 
-      color: {
-          pattern: ['#666666','#adb2c6', '#373636', '#b38e6e', '#8f5c4f','#584136']
-      }
-    });
-    <!--END MKT BUDGET-->
 
-
-    <!--TOP SPENDERS-->
+    <!--TOP SPENDERS BAR-->
     var chart3 = c3.generate({
       bindto: '#topspenders',
     data: {
@@ -527,58 +541,43 @@
         pattern: ['#b38e6e', '#373636', '#666666', '#8f5c4f','#584136', '#adb2c6']
       }
 });
-    <!--END TOP SPENDERS-->
-<!--START MARKETING CATEGORIES-->
-var chart2 = c3.generate({
- bindto: '#marketingcat',
- data: {
-   x: 'x',
-   columns: [
-       ['x', 'Media', 'Print Materials', 'Direct Mail', 'Postage'],
-       ['$ Spent by All Candidates in All Parties', 329490.71, 641914.08, 710079.44, 110405.37],
-   ],
-   type : 'bar'
- },
- axis: {
-   x: {
-       type: 'category',
-     }
-},
-tooltip: {
-    format: {
-        title: function (d) {console.log(d); return '$ Spent'; },
-        value: function (value, id) {
-            var format = "$" + d3.format(',.2f') (value);
-            return format;
-        }
-//            value: d3.format(',') // apply this format to both y and y2
-    }
-},
+    <!--END TOP SPENDERS BAR-->
 
-color: {
-    pattern: ['#666666', '#373636', '#b38e6e', '#8f5c4f','#584136', '#adb2c6']
-  }
+<!--START MARKETING CATEGORIES Pie-->
+var chart = c3.generate({
+  bindto: '#marketingcat',
+    data: {
+        columns: [
+            ['Media', 329490.71],
+            ['Print Media', 641914.08],
+            ['Direct Mail', 710079.44],
+            ['Postage', 110405.37],
+        ],
+        type : 'pie',
+        onclick: function (d, i) { console.log("onclick", d, i); },
+        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+    },
+    color: {
+        pattern: ['#b38e6e', '#373636', '#666666', '#8f5c4f','#584136', '#adb2c6']
+      }
 });
 
-<!--END MARKETING CATEGORIES-->
+<!--END MARKETING CATEGORIES Pie-->
 
   </script>
 <!--end line chart-->
 
 <!--start hero image-->
-
-    <div class="row">
-          <figure class="hero-image">
-            <img class="img-fluid" src="images/house-floor.jpg" alt="Maryland House Chambers"></>
-              <div class="container">
-              <div class="row">
-                <figcaption class="hero-caption col-md-8 offset-md-2">
+      <div class="hero">
+          <figure>
+            <img class="img-fluid" src="images/house-floor.jpg" alt="Maryland House Chambers"/>
+                <figcaption>
                   The House chamber at the Maryland State House. (Photo credit: Brenda Wintrode)
                 </figcaption>
-              </div>
-              </div>
           </figure>
-    </div>
+        </div>
+
 <!--end hero image-->
 
   <!--Start footer-->
