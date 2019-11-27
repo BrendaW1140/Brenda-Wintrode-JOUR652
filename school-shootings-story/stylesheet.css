@@ -1,13 +1,12 @@
 body {
   font-family: 'PT Serif', serif;
 }
-.container {
+/*.container {
   margin-top: 24px;
   margin-bottom: 24px;
-}
+}*/
 .star {
   display: inline-block;
-  padding: 0;
   text-align: center;
   width: 15px;
   margin: 10px;
@@ -66,6 +65,9 @@ font-family: 'Montserrat', sans-serif;
   max-width:900px;
   margin:0 auto;
   padding-top:30px;
+  margin-top: 24px;
+  margin-bottom: 5px;
+  /*when I put ion margin-bottom: 24px; it made the caption drop lower than what is in the example*/
   display: block;
 }
 .graphic-container {
@@ -74,8 +76,7 @@ padding-bottom:30px;
 border-top:1px solid #cdcdcd;
 border-bottom:1px solid #cdcdcd;
 font-family: 'Montserrat', sans-serif;
-margin:0 auto
-color: #0052a6;
+margin:0 auto;
 }
 .graphic-container h4 {
   font-size: 1.5em;
@@ -105,11 +106,20 @@ color: #0052a5;
   margin-top: 24px;
   margin-bottom: 24px;
 }
-.subhead {
+.centered {
+  text-align: center;
+}
+h2 {
   font-family: 'Montserrat';
   margin-bottom: 24px;
+  font-size: 1.5em;
+}
+.subhead {
   width: 100%;
   text-align: center;
+  margin: 0; auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .navbar-brand {
   font-family: 'Montserrat';
@@ -139,7 +149,7 @@ color: #0052a5;
   margin-bottom: 24px;
   color: black;
   font-family: PT Serif;
-  max-width: 80%;
+  max-width: 100%;
   font-size: 1em;
 }
 .hero-image {
