@@ -27,39 +27,34 @@
 <body>
 
   <!-- NavBar -->
+  <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="https://amarton.github.io/652-interactive-design-development/bootstrap-template/bootstrap-template.html#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="https://amarton.github.io/652-interactive-design-development/bootstrap-template/bootstrap-template.html#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <!-- Link -->
         <li class="nav-item">
-          <a class="nav-link" href="https://amarton.github.io/652-interactive-design-development/bootstrap-template/bootstrap-template.html#">Link</a>
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Intro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Graphs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Story Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Caucuses</a>
         </li>
         <!-- End Link -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="https://amarton.github.io/652-interactive-design-development/bootstrap-template/bootstrap-template.html#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="https://amarton.github.io/652-interactive-design-development/bootstrap-template/bootstrap-template.html#">Action</a>
-            <a class="dropdown-item" href="https://amarton.github.io/652-interactive-design-development/bootstrap-template/bootstrap-template.html#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="https://amarton.github.io/652-interactive-design-development/bootstrap-template/bootstrap-template.html#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="https://amarton.github.io/652-interactive-design-development/bootstrap-template/bootstrap-template.html#">Disabled</a>
-        </li>
       </ul>
-
     </div>
   </nav>
+</div>
   <!-- End NavBar -->
   <!--Headline-->
   <div class="container">
@@ -138,12 +133,17 @@
   </div>
 </div>
 <!--end pie chart marketing/caucus-->
-
+<!-- text section-->
   <p class="text">
     Incumbent candidates entrenched in districts with loyal party followings donated extra campaign funds - all told $1.55 million - into one of four central pots of money by house and party, called legislative party caucus committees.
   </p>
-
-
+  <p class="text">
+  Of the over $1.55 million dollars donated to state caucuses by the county candidates, only $38,000 was donated back to any state candidates’ campaigns of either party during the 2018 election cycle.
+  </p>
+  <p class="text">
+  Both Republican and Democratic state caucus committees sent hundreds of thousands to out-of-state strategy firms under the category of marketing, according to caucus committee reports.
+  </p>
+<!--end text section-->
 <!--start blockquote-->
 <div class="blockquote-container">
   <div class="row">
@@ -207,7 +207,7 @@
   <div class="row">
     <div class="col-md-8 offset-2">
       <blockquote class="blockquote">$1,979,652.50: <br>
-        The amount available to a candidate from a state caucus committee, according to the Maryland Board of Elections.
+        The amount available to a candidate from a state caucus committee for a coordinated campaign donation, according to the Maryland Board of Elections.
       </blockquote>
       </div>
   </div>
@@ -215,7 +215,7 @@
 <!--End Blockquote-->
 <!--text section-->
     <p class="text">
-    The summary guide defines a coordinated campaign contribution as “an expenditure made by the party central committee or legislative party caucus committee for the purpose of supporting one or more candidates and done with direct approval, knowledge, and cooperation of the candidate(s).
+    The summary guide defines a coordinated campaign contribution as “an expenditure made by the party central committee or legislative party caucus committee for the purpose of supporting one or more candidates and done with direct approval, knowledge, and cooperation of the candidate(s)."
     </p>
     <p class="text">
     According to the Maryland State Board of Elections in-kind contributions worksheet used for the 2018 election cycle, there were 3,959,305 eligible active voters in Maryland, which means up to $1,979,652.50 is potentially available from a state caucus committee per candidate.
@@ -294,12 +294,7 @@
     <p class="text">
     “You need to demonstrate that you really understand the issues and portray how the money will be spent,” Appel said. “(Candidates) need to be able to thoroughly explain how their money is going to be used and how a contribution to that entity will benefit (donors) in the long run.”
     </p>
-    <p class="text">
-    Of the over $1.55 million dollars donated by the Anne Arundel County candidates only $38,000 was donated back to candidates’ campaigns of either party during the 2018 election cycle.
-    </p>
-    <p class="text">
-    Both Republican and Democratic state caucus committees sent hundreds of thousands to out-of-state strategy firms under the category of marketing, according to caucus committee reports.
-    </p>
+
 <!--end text section-->
     </div>
   </div>
@@ -312,6 +307,9 @@
      <!--START MARKETING_CAUCUS PIE-->
      var chart = c3.generate({
        bindto: '#caucuspie',
+       legend: {
+    item: { onclick: function () {} }
+  },
     data: {
       // iris data from R
         columns: [
@@ -320,7 +318,7 @@
           ['Other Campaign Expenses', 1131292.83],
         ],
     type : 'pie',
-        onclick: function (d, i) { console.log("onclick", d, i); },
+        onclick: function (d) { console.log("onclick", d, i); },
         onmouseover: function (d, i) { console.log("onmouseover", d, i); },
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
       },
@@ -350,6 +348,9 @@
      <!--START District Spending PIE-->
      var chart = c3.generate({
        bindto: '#totalbydistrict',
+       legend: {
+    item: { onclick: function () {} }
+  },
     data: {
       // iris data from R
         columns: [
@@ -389,6 +390,9 @@
  <!--Total By District Pie-->
      var chart = c3.generate({
        bindto: '#totalbydistrict',
+       legend: {
+    item: { onclick: function () {} }
+  },
     data: {
       // iris data from R
         columns: [
@@ -428,7 +432,9 @@
 <!--TOP SPENDERS BAR-->
     var chart3 = c3.generate({
       bindto: '#topspenders',
-
+      legend: {
+      item: { onclick: function () {} }
+      },
     data: {
       x: 'x',
         columns: [
@@ -476,6 +482,9 @@
 <!--START BOTTOM SPENDERS GRAPH-->
     var chart3 = c3.generate({
       bindto: '#bottomspenders',
+      legend: {
+   item: { onclick: function () {} }
+ },
     data: {
       x: 'x',
         columns: [
@@ -524,6 +533,9 @@
 <!--START MARKETING CATEGORIES Pie-->
 var chart = c3.generate({
   bindto: '#marketingcat',
+  legend: {
+item: { onclick: function () {} }
+},
     data: {
         columns: [
             ['Media', 329490.71],
@@ -540,37 +552,35 @@ var chart = c3.generate({
         pattern: ['#F0EC67', '#FF7170', '#A6ABAB', '#FF4040']
     }
 });
-
 <!--END MARKETING CATEGORIES Pie-->
 </script>
 <!--end charts-->
 
 <!--start hero image-->
-      <div class="hero">
-          <figure>
-            <img class="img-fluid" src="images/house-floor.jpg" alt="Maryland House Chambers"/>
-                <figcaption class="caption">
-                  The House chamber at the Maryland State House. (Photo credit: Brenda Wintrode)
-                </figcaption>
-          </figure>
-        </div>
-
+<div class="hero">
+    <figure>
+      <img class="img-fluid" src="images/house-floor.jpg" alt="Maryland House Chambers"/>
+          <figcaption class="caption">
+            The House chamber at the Maryland State House. (Photo credit: Brenda Wintrode)
+          </figcaption>
+    </figure>
+  </div>
 <!--end hero image-->
 
-  <!--Start footer-->
-    <div class="row">
-      <div class="col-md-12">
-        <footer class="page-footer font-small gray">
+<!--Start footer-->
+<div class="row">
+  <div class="col-md-12">
+    <footer class="page-footer font-small gray">
 
-    <!-- Copyright -->
-        <div class="footer-copyright text-center py-3"> 2019 Copyright: Brenda Wintrode
-        </div>
-    <!-- Copyright -->
-
-        </footer>
-      </div>
+<!-- Copyright -->
+    <div class="footer-copyright text-center py-3"> 2019 Copyright: Brenda Wintrode
     </div>
-  <!--end footer-->
+<!-- Copyright -->
+
+    </footer>
+  </div>
+</div>
+<!--end footer-->
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
