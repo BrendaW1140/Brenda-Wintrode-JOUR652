@@ -1,7 +1,11 @@
+.container {
+  border-right: 1px solid #adb2c6;
+  border-left: 1px solid #adb2c6;
+}
 .caption {
   font-style: italic;
   font-size: 12px;
-  margin-top: 5px;
+  margin-top: 8px;
   margin-bottom: 30px;
 }
 .img-fluid{
@@ -20,52 +24,70 @@ em {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.30;
+  font-size: 4em;
 }
+.byline {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.chapter {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.50;
+    font-size: 25px;
+    font-weight: bold;
+    color: #373636;
+    margin-bottom: 10px;
+  }
+.text{
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.25em;
+    line-height: 1.75;
+    margin-bottom: 20px;
+    color: #373636;
+  }
 .graphic-container {
   padding: 30px;
 }
 .graph-title{
   font-size: 20px;
   text-align: center;
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Georgia', 'Times New Roman', serif;
   color: #adb2c6;
   margin-bottom: 30px;
 }
 .blockquote {
-  text-align: center;
-  font-family: Geneva, sans-serif;
-  font-size: 30px;
-  padding: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 40px;
-  margin-right: 40px;
-  color: #adb2c6;
+  font-family: 'Verdana', serif;
+  font-size: 25px;
+  text-align: left;
+  justify-content: center;
+  border-right: 1px solid #adb2c6;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
 }
-.byline {
-  font-family: Helvetica, sans-serif;
-  font-size: 15px;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.chapter {
-  font-family: 'Verdana', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.text{
-  font-family: 'Verdana', sans-serif;
-  font-size: 1em;
-  margin-bottom: 20px;
+.blockquote-right {
+  font-family: 'Verdana', serif;
+  font-size: 25px;
+  text-align: left;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
 }
 .page-footer {
   background-color: lightgrey;
 }
 .footer-copyright {
   font-size: 12px;
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Georgia', 'Times New Roman', serif;
 }
 .hero {
   position: relative;
@@ -76,11 +98,31 @@ em {
   display: flex;
 }
 .hero-caption {
-  font-size: 12px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1em;
   margin-bottom: 30px;
 }
 figcaption {
   text-align: center;
-  font-family: Verdana;
+  font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 14px;
+}
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: #373636;
+}
+
+/* mouse over link */
+a:hover {
+  color: #666666;
+}
+
+/* selected link */
+a:active {
+  color: black;
 }

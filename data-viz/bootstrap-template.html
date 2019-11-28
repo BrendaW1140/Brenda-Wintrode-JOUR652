@@ -14,6 +14,8 @@
   <!-- Load c3.css -->
      <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
 
+     <!--Load Google Fonts-->
+     <link href="https://fonts.googleapis.com/css?family=Rasa&display=swap" rel="stylesheet">
      <!-- Load our CSS -->
      <link rel="stylesheet" href="stylesheet.css">
 
@@ -55,10 +57,7 @@
           <a class="nav-link disabled" href="https://amarton.github.io/652-interactive-design-development/bootstrap-template/bootstrap-template.html#">Disabled</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+
     </div>
   </nav>
   <!-- End NavBar -->
@@ -83,62 +82,104 @@
     <!--End byline-->
 
 
-  <!--Start image container-->
-    <div class="container">
+  <!--Start hero image container-->
+<div class="container">
       <div class="row">
-          <div class="col-md-8 offset-md-2">
+          <div class="col-md-8 offset-2">
               <figure>
                 <img class="img-fluid" src="images/statehouse.jpg" alt="Above the State House"/>
                 <figcaption class="caption">
-                <a href="https://www.flickr.com/photos/51035749109@N01/44593635980">"Above the State House"</a><span> by <a href="https://www.flickr.com/photos/51035749109@N01">afagen</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0.</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;margin-top: 2px;margin-left: 3px;height: 22px !important;"></a>
+                <a href="https://www.flickr.com/photos/51035749109@N01/44593635980">"Above the State House"</a><span> by <a href="https://www.flickr.com/photos/51035749109@N01">afagen</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html">CC BY-NC-SA 2.0.</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer"></a>
                 </figcaption>
               </figure>
           </div>
       </div>
-    </div>
+  </div>
   <!--end image container-->
 
   <!--Start text container-->
     <div class="container">
       <div class="row">
           <div class="col-md-8 offset-md-2">
-            <h3 class="chapter">Over $4.4 million spent</h3>
+            <h3 class="chapter">Anne Arundel state candidates </h3>
             <p class="text">
-              In the 2018 state elections, 40 Anne Arundel County candidates
-              spent over $4.4 million dollars in an effort to win 20 Maryland General Assembly seats, and all of the seats but one remained in the hands of the same party,
-              according to an analysis of their campaign finance reports.
+              Chairman of the Anne Arundel Republican Central Committee James Appel could not imagine a political campaign being run without money.
             </p>
-  <!--pie chart-->
-            <div class="graphic-container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-              <h2 class="graph-title">How much was spent in your district?</h2>
-               <div id="totalbydistrict"></div>
-               <em>Source: Maryland Campaign Information System</em>
-            </div>
-          </div>
-          </div>
-  <!--end pie chart-->
+            <p class="text">
+              “There’s no way to get your word out if you can’t spend money on advertising,” said Appel, who also serves as treasurer on a number of campaigns for both party’s candidates.
+            </p>
+              <p class="text">
+                An analysis of the campaign finance reports revealed Anne Arundel County candidates spent over $1.7 million on direct marketing, media and postage to market their campaigns and just about as much was transferred out of their accounts to state caucus committees for the benefit of other state candidates.
+              </p>
+
+  <!-- pie chart marketing/caucus-->
+    <div class="graphic-container">
+      <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <h2 class="graph-title">Anne Arundel state candidates spent $4,477,440.86 running for office in 2018. 35% went to state caucus committees.
+            </h2>
+           <div id="caucuspie"></div>
+           <em>Source: Maryland Campaign Information System</em>
+        </div>
+      </div>
+    </div>
+<!--end pie chart marketing/caucus-->
 
             <p class="text">
-            In Districts 21, 31, 32 and 33 both parties spent on average just over $500,000 on their campaigns on marketing, donating to other campaigns and fundraising expenses. District 30 Democrats and Republicans spent over $2.3 million.
+              Incumbent candidates entrenched in districts with loyal party followings donated extra campaign funds - all told $1.55 million - into one of four central pots of money by house and party, called legislative party caucus committees.
             </p>
+            <p class="text">
+              Top spenders, regardless of where they spent their money, overwhelmingly won their campaigns.
   <!--start blockquote-->
-      <blockquote class="blockquote">Democratic candidates in Districts 30, 30A and 30B spent more on marketing than any other district spent in total.
-      </blockquote>
+  <div class="blockquote-container">
+    <div class="row">
+      <div class="col-md-6">
+        <blockquote class="blockquote">75% of the top 20 spenders won their election.
+        </blockquote>
+        <!--Start Top Spender Container-->
+        <div class="graphic-container">
+          <h2 class="graph-title">Ten Top Spenders</h2>
+          <div id="topspenders"></div>
+          <em>Source: Maryland Campaign Information System</em>
+        </div>
+    </div>
+      <!--End Top Spender Container-->
+      <div class="col-md-6">
+        <blockquote class="blockquote-right"> Only 25% of the 20 candidates who spent the least won.
+        </blockquote>
+        <!--Start Top Spender Container-->
+        <div class="graphic-container">
+          <h2 class="graph-title">Ten Bottom Spenders</h2>
+          <div id="bottomspenders"></div>
+          <em>Source: Maryland Campaign Information System</em>
+    </div>
+      <!--End Top Spender Container-->
+    </div>
+  </div>
+</div>
   <!--end blockquote-->
+  <!--Story map-->
+  <div class="graphic-container">
+      <div class="row">
+          <div class="col-md-12">
+              <iframe src="https://uploads.knightlab.com/storymapjs/1ae4638976b9df11661f119595a42ade/who-represents-anne-arundel-county/index.html" frameborder="0" width="100%" height="800"></iframe>
+          </div>
+      </div>
+  </div>
+  <!--End Story Map-->
 
 
-            <h3 class="chapter">District 30 had the highest spending number. Here's why.</h3>
+
+            <h3 class="chapter">Caucus committe donors can give more than the $6,000 per-election-cycle limit.</h3>
               <p class="text">
-              The spending anomaly was created by the budget of Speaker of the House Michael E. Busch, a popular, decades-long party leader in Annapolis who passed away in April. During the 2018 election, Busch transferred close to $1 million to the House Democratic Caucus Committee, slates or other candidates’ campaigns.
+                Candidates, citizens and other entities can contribute to state caucus committees with names such as the Senate Republican Caucus Committee, the Democratic Senate Caucus Committee or the like on the House side, just as they would a candidate. Except, they can give more because the campaign finance limits for caucus committees are different.
               </p>
               <p class="text">
-              Brooks Schandelmeier, treasurer for the Anne Arundel Democratic Central Committee, said that it’s typical for the leaders of both parties to raise money for their respective house and senate committees.
+                Donors to a party caucus committee can give more than the $6,000 per-election-cycle limit, and the caucuses are then able to donate more than $6,000 to candidates of their choosing.
               </p>
-              <div class="container">
+              <div class="image-container">
                 <div class="row">
-                    <div class="col-md-8 offset-md-2">
+                    <div class="col-12">
                         <figure>
                           <img class="img-fluid" src="images/senate.jpg" alt="Miller Senate Building Sign">
                           <figcaption class="caption"> Miller Senate building entrace on Bladen Street in Annapolis. (Photo credit: Brenda Wintrode)
@@ -148,14 +189,25 @@
                 </div>
               </div>
               <p class="text">
-              “What you do as a leader is you raise a bunch of money, and you give it to the house caucus or you give it directly to other campaigns,” Schandelmeier said, who is also the president of the democratic club in Busch’s former district.
+                According to the Maryland Board of Elections, “Maryland Candidacy & Campaign Finance Laws Summary Guide,” a candidate can donate unlimited funds to a caucus committee, and so can a citizen, as long as the citizen earmarks the donation for administrative use.
               </p>
               <p class="text">
-              "The money spent by the caucuses are usually guided by the caucus leaders, but others can also play a role," said James Appel, chairman of the Anne Arundel Republican Central Committee and treasurer for several political campaigns. "Donors to individuals are usually ok with their contributions going towards a common goal of their candidate but that can be a concern. I don’t recall hearing an individual donor being upset about the transfer.
+                Caucuses can donate $24,000 to one candidate or up to 50 cents per registered voter in the state as a coordinated campaign contribution.
               </p>
+              <!--start blockquote-->
+              <div class="blockquote-container">
+                <div class="row">
+                  <div class="col-md-8 offset-2">
+                    <blockquote class="blockquote-right">$1,979,652.50 is potentially available from a state caucus committee per candidate.
+                    </blockquote>
+                    </div>
+                </div>
+              </div>
+  <!--End Blockquote-->
+
 
               <!--Start Spending Breakdown Container-->
-              <div class="graphic-container">
+              <!--div class="graphic-container">
                 <div class="row">
                           <div class="col-md-8 offset-md-2">
                               <h2 class="graph-title">How much went to a caucus?</h2>
@@ -167,13 +219,44 @@
                             <div class="col-md-4"><div id="senatedempie"></div></div>
                           </div>
                 <em>Source: Maryland Campaign Information System</em>
-              </div>
+              </div-->
             <!--End Spending Breakdown Container-->
 
               <p class="text">
+              The summary guide defines a coordinated campaign contribution as “an expenditure made by the party central committee or legislative party caucus committee for the purpose of supporting one or more candidates and done with direct approval, knowledge, and cooperation of the candidate(s).
+              </p>
+              <p class="text">
+              According to the Maryland State Board of Elections in-kind contributions worksheet used for the 2018 election cycle, there were 3,959,305 eligible active voters in Maryland, which means up to $1,979,652.50 is potentially available from a state caucus committee per candidate.
+              </p>
+              <p class="text">
+              "The monies spent by the caucuses are usually guided by the caucus leaders, but others can also play a role," said Appel.
+              </p>
+              <p class="text">
+              According to Appel, the Republican leaders making these decisions are  primarily Senators Hershey and Jennings and on the House side, Delegates Nic Kipke and Kathy Szeliga.
+              </p>
+              <p class="text">
+              “Donors to individuals are usually ok with their contributions going towards a common goal of their candidate, but that can be a concern,” said Appel. “I don’t recall hearing an individual donor being upset about the transfer.”
+              </p>
+              <p class="text">
+              Brooks Schandelmeier, treasurer for the Anne Arundel Democratic Central Committee, said that it’s typical for the leaders of both parties to raise money for their respective house and senate committees.
+              </p>
+              <p class="text">
+              “What you do as a leader is you raise a bunch of money, and you give it to the house caucus or you give it directly to other campaigns,” Schandelmeier said, who serves as president for the Democratic club in District 30.
+              </p>
+              <p class="text">
+              Speaker of the House Michael E. Busch, a popular, decades-long party leader in Annapolis who passed away in April, transferred more than $1 million to the House Democratic Caucus Committee, slates or other candidates’ campaigns in the 2018 election cycle.
+              </p>
+              <div class="blockquote-container">
+                <div class="row">
+                  <div class="col-md-6 offset-3">
+                    <blockquote class="blockquote">The largest donation to a Republican Caucus Committee was $125,000 made by Pasadena Republican Del. Nic Kipke.</blockquote>
+                  </div>
+                </div>
+              </div>
+              <p class="text">
               Schandelmeier said, that for the Democrats, these funds are used strategically to support vulnerable Democrats or challenge a vulnerable Republican seat.
               </p>
-              <h3 class="chapter">"An incumbent can raise more money..."</h3>
+              <h3 class="chapter">“…an incumbent can raise more money..."</h3>
               <p class="text">
               “Certainly an incumbent can raise money more than a candidate because they’re already there. And the people that are trying to influence those elected officials will give more money,” said Appel.
               </p>
@@ -181,46 +264,25 @@
               Del. Nic Kipke (R-Pasadena), incumbent house minority leader, and returning candidate Ron George, this time for a District 30 Senate seat were the party’s two largest donors to Republican caucus committees, according to campaign finance reports.
               </p>
               <p class="text">
-              Of Kipke’s $260,140.27 in total spending, he gave $125,000 to the Republican House Caucus Committee and George gave $103,690 to the Senate Republican Caucus Committee.
-              </p>
-
-              <blockquote class="blockquote">The largest donation to a Republican Caucus Committee was $125,000 made by Pasadena Republican Del. Nic Kipke.</blockquote>
-
-              <p class="text">
-              Candidates received money from donors, from their fellow candidates from other districts and sometimes from their own bank accounts. But once they made that money, how did they spend it? Does more money earned - and ultimately spent - equal a seat in the legislature?
-              </p>
-
-              <blockquote class="blockquote"> 75% of the top 20 spenders won their election. Only 25% of those 20 candidates who spent the least were elected.</blockquote>
-              <!--Start Top Spender Container-->
-              <div class="graphic-container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                <h2 class="graph-title">Top Ten Spenders</h2>
-                <div id="topspenders"></div>
-                <em>Source: Maryland Campaign Information System</em>
-              </div>
-            </div>
-          </div>
-            <!--End Top Spender Container-->
-            <!--Story map-->
-            <div class="graphic-container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <iframe src="https://uploads.knightlab.com/storymapjs/1ae4638976b9df11661f119595a42ade/who-represents-anne-arundel-county/index.html" frameborder="0" width="100%" height="800"></iframe>
-                    </div>
-                </div>
-            </div>
-            <!--End Story Map-->
-
-              <p class="text">
-              Throughout the months leading up to an election, candidates host bonfire parties, pig roasts and pancake breakfasts to earn campaign dollars and votes. Appel said accountability to donors is key for continued fundraising success.
+              Of Kipke’s $260,140.27 in total spending, he gave $162,800.32 to the Republican House Caucus Committee and Annapolis entrepreneur, George, gave $103,690 to the Senate Republican Caucus Committee.
               </p>
               <p class="text">
-              “You need to demonstrate that you really understand the issues and portray how the money will be spent,” Appel said. “(Candidates) need to be able to thoroughly explain how their money is going to be used and how a contribution to that entity will benefit them (donors) in the long run.”
+              George was the third highest campaign spender and the only candidate of the top ten spenders to lose his election. Democrat Sarah Elfreth won.
+              Appel said accountability to donors is key for continued fundraising success.
               </p>
               <p class="text">
-              On average, candidates spent 59% of their budgets on marketing. Thirty-three percent of the candidates spent 75% or more of their total expenditures on marketing.
+              “You need to demonstrate that you really understand the issues and portray how the money will be spent,” Appel said. “(Candidates) need to be able to thoroughly explain how their money is going to be used and how a contribution to that entity will benefit (donors) in the long run.”
               </p>
+              <p class="text">
+              Of the over $1.55 million dollars donated by the Anne Arundel County candidates only $38,000 was donated directly back to candidates’ campaigns of either party during the 2018 election cycle.
+              </p>
+              <p class="text">
+              Both Republican and Democratic state caucus committees sent hundreds of thousands to out-of-state strategy firms under the category of marketing.
+              </p>
+
+
+
+
 
               <!--start bar chart container-->
                         <div class="graphic-container">
@@ -236,7 +298,7 @@
 
 
 
-              <p class="text">
+              <!--p class="text">
               The amount a candidate needs to spend on marketing is based on how many voters they are trying to reach.
               <p class="text">
               “Door knocking is - dollar for dollar - the most effective way to do it,” Schandelmeier said. “But because districts like here in Anne Arundel County are so spread out, you have to supplement that with mail.”
@@ -261,21 +323,51 @@
               </p>
         </div>
       </div>
-    </div>
+    </div-->
   <!--End text container-->
 
   <!--start charts-->
-  <!-- first graphic container-->
-
-
-
-
-
- <!-- END first graphic container-->
 
   <!-- c3 script-->
      <script type="text/javascript">
      //CHART 1
+     <!--START MARKETING_CAUCUS PIE-->
+     var chart = c3.generate({
+       bindto: '#caucuspie',
+    data: {
+      // iris data from R
+        columns: [
+          ['Marketing Expenses', 1791889.60],
+          ['Transferred to Caucus Committees', 1554258.43],
+          ['Other Campaign Expenses', 1131292.83],
+        ],
+    type : 'pie',
+        onclick: function (d, i) { console.log("onclick", d, i); },
+        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+      },
+      pie: {
+        label: {
+            format: function (value, ratio, id) {
+                return d3.format(',.0%')(ratio);
+            }
+        }
+    },
+    tooltip: {
+        format: {
+            title: function (d) { return '$ in millions'; },
+            value: function (value, ratio, id) {
+                var format = "$" + d3.format(',.2f') (value);
+                return format;
+            }
+//            value: d3.format(',') // apply this format to both y and y2
+        }
+    },
+    color: {
+        pattern: ['#b38e6e', '#584136', '#373636', '#666666', '#adb2c6', '#8f5c4f']
+    }
+      });
+     <!--END MARKETING-CAUCUS PIE-->
 
      <!--START District Spending PIE-->
      var chart = c3.generate({
@@ -524,8 +616,15 @@
         rotated: true,
         x: {
             type: 'category',
-          }
+          },
+        y: {
+          max: 300000,
+          tick: {
+            count: 4
+        }
+      }
     },
+
 
     tooltip: {
         format: {
@@ -542,6 +641,46 @@
       }
 });
     <!--END TOP SPENDERS BAR-->
+
+<!--START BOTTOM SPENDERS GRAPH-->
+    var chart3 = c3.generate({
+      bindto: '#bottomspenders',
+    data: {
+      x: 'x',
+        columns: [
+            ['Total Campaign Spending', 520.00, 3112.86, 5741.22, 7048.99, 8078.01, 8610.29, 10832.88, 17161.95, 21505.17, 22619.19, 24220.95],
+            ['x', 'Douglas', 'Gill', 'Harman', 'Simpson', 'Anyanwu', 'Freeman', 'Bagnall', 'Luby', 'Hurwitz', 'Havis', 'Hovermale'],
+          ],
+        type: 'bar'
+      },
+    axis: {
+        rotated: true,
+        x: {
+            type: 'category',
+          },
+        y: {
+          tick: {
+            count: 4
+          }
+        }
+    },
+
+
+    tooltip: {
+        format: {
+            title: function (d) {console.log(d); return 'Total Campaign Spending'; },
+            value: function (value, ratio, id) {
+                var format = "$" + d3.format(',.2f') (value);
+                return format;
+            }
+//            value: d3.format(',') // apply this format to both y and y2
+        }
+    },
+    color: {
+        pattern: ['#b38e6e', '#373636', '#666666', '#8f5c4f','#584136', '#adb2c6']
+      }
+});
+<!--END LOW SPENDERS GRAPH-->
 
 <!--START MARKETING CATEGORIES Pie-->
 var chart = c3.generate({
@@ -572,7 +711,7 @@ var chart = c3.generate({
       <div class="hero">
           <figure>
             <img class="img-fluid" src="images/house-floor.jpg" alt="Maryland House Chambers"/>
-                <figcaption>
+                <figcaption class="caption">
                   The House chamber at the Maryland State House. (Photo credit: Brenda Wintrode)
                 </figcaption>
           </figure>
