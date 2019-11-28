@@ -51,6 +51,7 @@ em {
   }
 .graphic-container {
   padding: 30px;
+  position: relative;
 }
 .graph-title{
   font-size: 20px;
@@ -61,23 +62,19 @@ em {
 }
 .blockquote {
   font-family: 'Verdana', serif;
-  font-size: 25px;
+  font-size: 30px;
   text-align: left;
   justify-content: center;
   border-right: 1px solid #adb2c6;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 30px;
   padding-bottom: 30px;
 
 }
 .blockquote-right {
   font-family: 'Verdana', serif;
-  font-size: 25px;
+  font-size: 30px;
   text-align: left;
   justify-content: center;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 30px;
   padding-bottom: 30px;
 
