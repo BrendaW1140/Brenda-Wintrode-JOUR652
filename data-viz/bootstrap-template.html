@@ -386,18 +386,10 @@
             ['x', 'Busch', 'Elfreth', 'George', 'Kipke', 'Rosapepe', 'Beidle', 'Reilly', 'Barnes', 'Cain', 'Carey', 'Saab'],
           ],
         type: 'bar',
-        /*color: function(inColor, data) {
-                 var colors = ['#F0EC67', '#FF7170'];
-                 if(data.index == 2) {
-                     return '#FF7170';
-                 } else {return '#F0EC67'}
-                 return inColor;
-             },*/
       groups: [
             ['Won Their Election', 'Lost Their Election']
         ]
     },
-
     axis: {
         rotated: true,
         x: {
@@ -422,7 +414,7 @@
         }
     },
     color: {
-        pattern: ['#F0EC67','#FF7170']
+        pattern: ['#F0EC67', '#FF7170']
 
         }
 
@@ -437,17 +429,14 @@
     data: {
       x: 'x',
         columns: [
-            ['Lost Their Election', 520.00, 3112.86, 5741.22, 7048.99, 8078.01, 8610.29, 10832.88, 17161.95, 21505.17, 22619.19, 24220.95],
+            ['Lost Their Election', 520.00, 3112.86, 5741.22, 7048.99, 8078.01, 8610.29, 0, 17161.95, 21505.17, 22619.19, 24220.95],
+            ['Won Their Election', 0, 0, 0, 0, 0, 0, 10832.88, 0, 0, 0, 0],
             ['x', 'Douglas', 'Gill', 'Harman', 'Simpson', 'Anyanwu', 'Freeman', 'Bagnall', 'Luby', 'Hurwitz', 'Havis', 'Hovermale'],
           ],
         type: 'bar',
-        /*color: function(inColor, data) {
-                 var colors = ['#F0EC67','#FF7170'];
-                 if(data.index !==6) {
-                     return '#FF7170';
-                 } else {return '#F0EC67'}
-                 return inColor;
-             }*/
+      groups: [
+            ['Lost Their Election', 'Won Their Election']
+        ]
       },
     axis: {
         rotated: true,
@@ -462,8 +451,6 @@
           }
         }
     },
-
-
     tooltip: {
         format: {
             title: function (d) {
@@ -473,11 +460,10 @@
                 var format = "$" + d3.format(',.2f') (value);
                 return format;
             }
-//            value: d3.format(',') // apply this format to both y and y2
         }
     },
     color: {
-        pattern: ['#F0EC67','#FF7170']
+        pattern: ['#FF7170', '#F0EC67']
     }
 });
 <!--END LOW SPENDERS GRAPH-->
