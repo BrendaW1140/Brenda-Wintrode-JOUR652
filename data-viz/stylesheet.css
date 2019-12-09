@@ -1,7 +1,55 @@
+@media (min-width: 480px) {
+  .container {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+  p {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+  blockquote {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.chapter{
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.graphic-container {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.headline{
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.img-fluid{
+  width: 100%;
+  margin-top: 20px;
+}
+.graphic-container-map {
+  width: 100%;
+  margin-top: 20px;
+}
+}
 .container {
   border-right: 1px solid #adb2c6;
   border-left: 1px solid #adb2c6;
   padding: 0;
+  margin: auto;
 }
 .caption {
   text-align: center;
@@ -38,56 +86,67 @@
     font-size: 25px;
     font-weight: bold;
     color: #373636;
-    margin-bottom: 10px;
-  }
-.text{
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.text {
     font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 1.25em;
     line-height: 1.75;
     margin-bottom: 20px;
     color: #373636;
-  }
+}
+.text-chatter {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1em;
+  line-height: 1.25;
+  color: #373636;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: left;
+}
 .graphic-container {
   padding: 0;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 .graphic-container-map {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 .graph-title {
-  font-size: 25px;
-  padding-bottom: 10px;
-  text-align: center;
+  font-size: 18px;
+  text-align: left;
   font-family: 'Georgia', 'Times New Roman', serif;
-  margin-bottom: 30px;
-  font-weight: bold;
-
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.graph-spenders {
+  font-size: 18px;
+  text-align: left;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 .c3-chart-arc text {
     fill: black;
 }
 .blockquote {
-  font-family: 'Verdana', serif;
+  font-family: 'Roboto', serif;
   color: #A6ABAB;
   font-size: 30px;
   text-align: left;
   justify-content: center;
-  border-left: 1px solid #A6ABAB;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  margin-left: 50px:
 }
-.blockquote-right {
-  font-family: 'Verdana', serif;
-  font-size: 30px;
-  text-align: left;
-  justify-content: center;
+.blockquote-container {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #A6ABAB;
 }
 .page-footer {
   background-color: lightgrey;
@@ -117,19 +176,19 @@ figcaption {
 /* unvisited link */
 a:link {
   color: black;
+  text-decoration: underline;
 }
-
 /* visited link */
 a:visited {
   color: #373636;
 }
-
 /* mouse over link */
 a:hover {
   color: #666666;
+  text-decoration: underline;
 }
-
 /* selected link */
 a:active {
   color: black;
+  text-decoration: underline;
 }
